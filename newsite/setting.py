@@ -50,12 +50,18 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'newsite.wsgi.application'
 
-
-# Database (SQLite by default; you can swap to MySQL later)
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'kslee5838$default',   # your DB name
+        'USER': 'kslee5838',           # your PA username
+        'PASSWORD': 'kslee123##',
+        'HOST': 'kslee5838.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
+        'OPTIONS': {
+            'charset': 'utf8mb4',
+            'init_command': "SET NAMES 'utf8mb4' COLLATE 'utf8mb4_general_ci';",
+        },
     }
 }
 
