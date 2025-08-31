@@ -70,10 +70,21 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
-LANGUAGE_CODE = 'en-us'
+#LANGUAGE_CODE = 'en-us'
+#TIME_ZONE = 'Asia/Seoul'
+#USE_I18N = True
+#USE_TZ = True
+
+LANGUAGE_CODE = 'ko-kr'
 TIME_ZONE = 'Asia/Seoul'
+
 USE_I18N = True
+USE_L10N = True
 USE_TZ = True
+
+# Default charset
+DEFAULT_CHARSET = 'utf-8'
+
 
 
 # Static files
