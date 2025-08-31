@@ -96,6 +96,7 @@ DEFAULT_CHARSET = 'utf-8'
 
 # Static files
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = '/home/kslee5838/mysite/staticfiles'
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
