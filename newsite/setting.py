@@ -53,9 +53,9 @@ WSGI_APPLICATION = 'newsite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'kslee5838$default',   # your DB name
-        'USER': 'kslee5838',           # your PA username
-        'PASSWORD': 'kslee123##',
+        'NAME': 'kslee5838$shazam_library',   # << note: must include your username prefix
+        'USER': 'kslee5838',                  # your PythonAnywhere username
+        'PASSWORD': 'your-db-password',       # the one you set in PA
         'HOST': 'kslee5838.mysql.pythonanywhere-services.com',
         'PORT': '3306',
         'OPTIONS': {
@@ -64,6 +64,7 @@ DATABASES = {
         },
     }
 }
+
 
 
 # Password validation
